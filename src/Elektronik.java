@@ -1,17 +1,17 @@
 public class Elektronik extends OnlineShop{
-    private String InformasiGaransi;
+    String Garansi;
 
 
     Elektronik(String namaBarang, int hargaBarang) {
         super(namaBarang, hargaBarang);
-        this.InformasiGaransi=InformasiGaransi;
+        this.Garansi=Garansi;
     }
 
     public void setInformasiGaransi(String informasiGaransi) {
-        InformasiGaransi = informasiGaransi;
+        Garansi =Garansi;
     }
 
     public String getInformasiGaransi() {
-        return InformasiGaransi;
+        return Garansi;
     }
 }

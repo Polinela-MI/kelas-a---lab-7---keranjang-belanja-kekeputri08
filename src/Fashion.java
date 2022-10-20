@@ -1,16 +1,23 @@
 public class Fashion extends OnlineShop {
-    int ukuran;
+     private String ukuran;
+
+
 
     Fashion(String namaBarang, int hargaBarang) {
         super(namaBarang, hargaBarang);
         this.ukuran=ukuran;
     }
 
-    public void setUkuran(int ukuran) {
+    public void setUkuran(String ukuran) {
         this.ukuran = ukuran;
     }
 
-    public int getUkuran() {
+    public String getUkuran() {
         return ukuran;
+    }
+
+    @Override
+    public String toString(){
+        return getNamaBarang() + " , " + ukuran;
     }
 }

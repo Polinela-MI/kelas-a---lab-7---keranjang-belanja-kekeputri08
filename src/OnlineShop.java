@@ -1,12 +1,14 @@
-public class OnlineShop {
-    String namaBarang;
-    int hargaBarang;
+public abstract class OnlineShop {
+    private String namaBarang;
+    private int hargaBarang;
 
 
     OnlineShop(String namaBarang, int hargaBarang){
         this.namaBarang=namaBarang;
         this.hargaBarang=hargaBarang;
     }
+
+
 
     public void setHargaBarang(int hargaBarang) {
         this.hargaBarang = hargaBarang;
@@ -23,6 +25,14 @@ public class OnlineShop {
     public String getNamaBarang() {
         return namaBarang;
     }
+
+
+    @Override
+    public String toString(){
+        return namaBarang;
+
+    }
+
 }
 
 
