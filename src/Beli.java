@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Beli {
     public static void main(String[] args){
 
@@ -12,14 +14,23 @@ public class Beli {
 
         String[] hasilSplit = AllItem.split(";");
 
-        for (String s1 : hasilSplit) {
-            System.out.println(s1);
+        for (int i=0; i< hasilSplit.length; i++) {
+
+            String[] OnlineShop = hasilSplit[i].split("#");
+
+            switch (OnlineShop[0]){
+                case "makanan":
+                    Makanan Makanan = new Makanan(OnlineShop[1], OnlineShop[2], OnlineShop[3]);
+                    break;
+                case "fashion":
+                    Fashion Fashion = new Fashion(OnlineShop[1], OnlineShop[2], OnlineShop[3]);
+                    break;
+                case "makanan":
+                    Elektronik Elektronik = new Elektronik(OnlineShop[1], OnlineShop[2], OnlineShop[3]);
+                    break;
+            }
+            ArrayList shoping = new ArrayList<>();
+            
         }
-
-
-
     }
-
-
-
 }
